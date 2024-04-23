@@ -21,7 +21,7 @@ public class Tenant extends User {
     }
   
     public void requestTerminateRentalContract(RentalContract contract) {
-      // Implement logic to submit a termination request for an existing contract
+      // Implement logic to submit a termination request for an existing contract if it's active
       // This method might return a confirmation or handle logic based on contract status
   
       if (listOfContracts.contains(contract) && contract.getStatus().equals("Active")) {
