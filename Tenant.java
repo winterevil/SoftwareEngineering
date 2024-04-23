@@ -3,10 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/**
- *
- * @author buitu
- */
 public class Tenant {
     private User user;
     private RentalContract rentalContract;
