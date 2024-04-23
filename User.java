@@ -47,4 +47,12 @@ public class User {
     public void setUserType(String userType) {
         this.userType = userType;
     }
+
+    public User creatUser(int userId, String password, String email, String userType) {
+        return new User(userId, password, email, userType);
+    }
+
+    public void resetPassword(String password) {
+        this.password = password;
+    }
 }
