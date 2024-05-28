@@ -17,6 +17,8 @@ public class midPriorityConcreteCreator implements RequestCreator {
 
     @Override
     public requestProduct processRequest() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        requestProduct request = CreateRequest();
+        request.processRequest();
+        return request;
     }
 }

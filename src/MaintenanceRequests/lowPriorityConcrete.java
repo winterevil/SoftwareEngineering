@@ -10,23 +10,13 @@ package MaintenanceRequests;
  */
 public class lowPriorityConcrete extends requestProduct {
 
-    protected void processRequest(Request request) {
+    public lowPriorityConcrete() {
+        super("Ignore", "28-05-2024", "Done");
+    }
+
+    @Override
+    public void processRequest() {
         System.out.println("Request denied");
-    }
-
-    @Override
-    public void setPriority(String priority) {
-        priority = "Ignore";
-    }
-
-    @Override
-    public void setExpire(String expireDay) {
-        expireDay = "28-05-2024";
-    }
-
-    @Override
-    public void setStatus(String status) {
-        status = "Done";
     }
 
 }

@@ -10,22 +10,12 @@ package MaintenanceRequests;
  */
 public class midPriorityConcrete extends requestProduct {
 
-    @Override
-    public void setPriority(String priority) {
-        priority = "Medium";
+    public midPriorityConcrete() {
+        super("Medium", "28-06-2024", "Accepted");
     }
 
     @Override
-    public void setExpire(String expireDay) {
-        expireDay = "28-06-2024";
-    }
-
-    @Override
-    public void setStatus(String status) {
-        status = "Accepted";
-    }
-
-    public void processRequest(Request request) {
+    public void processRequest() {
         System.out.println("Request accept, estimated completion date is 28-05-2024");
     }
 

@@ -14,7 +14,12 @@ public abstract class requestProduct {
     private String expireDay;
     private String status;
     
-
+    public requestProduct(String priority, String expireDay, String status) {
+        this.priority = priority;
+        this.expireDay = expireDay;
+        this.status = status;
+    }
+    
     public void setPriority(String priority) {
         this.priority = priority;
     }
@@ -27,8 +32,7 @@ public abstract class requestProduct {
         this.status = status;
     }
     
-    public void processRequest(){
-        
-    }
+    public abstract void processRequest();
+    
 
 }

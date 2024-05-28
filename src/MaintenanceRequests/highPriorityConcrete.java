@@ -10,22 +10,12 @@ package MaintenanceRequests;
  */
 public class highPriorityConcrete extends requestProduct {
 
-    @Override
-    public void setPriority(String priority) {
-        priority = "Emergency";
+    public highPriorityConcrete() {
+        super("Emergency", "28-05-2024", "Accept");
     }
 
     @Override
-    public void setExpire(String expireDay) {
-        expireDay = "28-05-2024";
-    }
-
-    @Override
-    public void setStatus(String status) {
-        status = "Accept";
-    }
-
-    protected void processRequest(Request request) {
+    public void processRequest() {
         System.out.println("Emergency request, our Administer will contact you immediately !");
     }
 
